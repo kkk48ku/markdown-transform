@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "573576",
+      "name": "triangle_down_fill",
+      "font_class": "triangledownfill",
+      "unicode": "e79b",
+      "unicode_decimal": 59291
+    },
+    {
+      "icon_id": "573577",
+      "name": "triangle_up_fill",
+      "font_class": "triangleupfill",
+      "unicode": "e79c",
+      "unicode_decimal": 59292
+    },
+    {
+      "icon_id": "1526396",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    }
+  ]
+}
