@@ -24,6 +24,7 @@
         "body-parser": "^1.19.0",
         "cors": "^2.8.5",
         "express": "^4.17.1",
+        "mavon-editor": "^2.7.6",
         "request": "^2.88.0",
         "vue": "^2.6.10"
     }

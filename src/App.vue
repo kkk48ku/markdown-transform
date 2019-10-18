@@ -1,12 +1,14 @@
 <template>
 	<div id="app">
 		<pub-header :user-info="userInfo"></pub-header>
+		<editor></editor>
 	</div>
 </template>
 
 <script>
 import * as api from './api/api';
 import PubHeader from './components/Header';
+import Editor from './components/Editor';
 
 export default {
 	data() {
@@ -15,7 +17,8 @@ export default {
 		};
 	},
 	components: {
-		PubHeader
+		PubHeader,
+		Editor
 	},
 	beforeCreate() {
 		api.getUserInfo('13811111111').then(res => {
@@ -26,7 +29,6 @@ export default {
 </script>
 
 <style lang="stylus">
-@import url("./css/reset.css");
 html
 	font-family: -apple-system,system-ui,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
 	color #333

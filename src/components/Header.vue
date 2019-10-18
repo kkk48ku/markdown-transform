@@ -1,6 +1,6 @@
 <template>
 	<div class="header">
-		<input type="text" placeholder="输入文章标题..." />
+		<input type="text" placeholder="输入文章标题..." v-model="title" />
 		<div class="right-box">
 			<i class="iconfont icon-tupian"></i>
 			<div class="toggle-btn">
@@ -15,8 +15,15 @@
 <script>
 export default {
 	name: 'Header',
-	props: {
-		userInfo: Object
+	props: { userInfo: Object },
+	data() {
+		return { title: '' };
+	},
+	watch: {
+		title: (n, o) => {
+			if (!n) return (document.title = `写文章 - 掘金`);
+			document.title = `写文章-${n}-掘金`;
+		}
 	}
 };
 </script>
